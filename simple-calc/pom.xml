@@ -14,6 +14,7 @@
     <modules>
         <module>v1</module>
         <module>v2</module>
+        <module>v3</module>
     </modules>
 
     <dependencies>
@@ -33,10 +34,17 @@
             <artifactId>mockito-all</artifactId>
             <version>1.9.5</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.8</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>simple-calc-v1</finalName>
+        <finalName>simple-calc</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
