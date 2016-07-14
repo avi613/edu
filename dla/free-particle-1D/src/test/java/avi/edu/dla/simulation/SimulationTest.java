@@ -1,7 +1,6 @@
 package avi.edu.dla.simulation;
 
 import avi.edu.dla.particle.Particle;
-import org.assertj.core.util.Compatibility;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
