@@ -1,4 +1,4 @@
-package avi.edu.particle;
+package avi.edu.dla.particle;
 
 import lombok.Value;
 
