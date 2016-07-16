@@ -15,9 +15,6 @@ public class Simulation {
 
         System.out.println("current position is: " + initialPosition);
 
-        if (numberOfSteps == 0) {
-            return new Particle(initialPosition);
-        }
-        return simulate(numberOfSteps - 1, initialPosition + randomGenerator.nextMove());
+        return numberOfSteps == 0 ? new Particle(initialPosition) : simulate(numberOfSteps - 1, initialPosition + randomGenerator.nextMove());
     }
 }
