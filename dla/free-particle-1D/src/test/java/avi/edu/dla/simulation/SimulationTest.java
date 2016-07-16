@@ -39,7 +39,7 @@ public class SimulationTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void it_should_throw_an_exception_if_movement_is_not_well_formated() {
+    public void it_should_throw_an_exception_if_movement_is_not_well_formatted() {
         simulation.simulate("+++.---", 1);
     }
 }
