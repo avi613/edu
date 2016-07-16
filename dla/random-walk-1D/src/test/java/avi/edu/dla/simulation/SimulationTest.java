@@ -1,8 +1,7 @@
-package avi.edu.dla.Simulation;
+package avi.edu.dla.simulation;
 
 import avi.edu.dla.particle.Particle;
 import avi.edu.dla.rand.RandomGenerator;
-import avi.edu.dla.simulation.Simulation;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
