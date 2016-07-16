@@ -10,6 +10,6 @@ public class RandomGenerator {
     }
 
     public int nextMove() {
-        return random.nextInt(2);
+        return random.nextInt(2) == 0 ? -1 : 1;
     }
 }
