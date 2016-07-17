@@ -14,6 +14,7 @@
     <modules>
         <module>free-particle-1D</module>
         <module>random-walk-1D</module>
+        <module>dla-1D</module>
     </modules>
 
     <dependencies>
