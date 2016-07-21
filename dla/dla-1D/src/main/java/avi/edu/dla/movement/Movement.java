@@ -3,9 +3,7 @@ package avi.edu.dla.movement;
 import avi.edu.dla.particle.Particle;
 import avi.edu.dla.rand.RandomGenerator;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 
-@Data
 @AllArgsConstructor
 public class Movement {
     private int targetPosition;

@@ -8,7 +8,7 @@ public class RandomGeneratorTest {
     private RandomGenerator randomGenerator = new RandomGenerator();
 
     @Test
-    public void it_should_generate_random_ints_between_0_and_1() {
+    public void it_should_generate_random_ints_of_minus_1_and_1() {
         assertThat(randomGenerator.nextMove()).matches(nextMove -> nextMove == -1 || nextMove == 1);
     }
 }

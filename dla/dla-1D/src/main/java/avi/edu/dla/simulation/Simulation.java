@@ -7,7 +7,6 @@ import lombok.Value;
 @Value
 public class Simulation {
     private final int initialPosition;
-    private final int targetPosition;
     private final Movement movement;
 
     public void simulate() {
@@ -15,7 +14,9 @@ public class Simulation {
     }
 
     public static void main(String[] args) {
-        Simulation simulation = new Simulation(10, 0, new Movement(0, new RandomGenerator()));
+        final int INITIAL_POSITION = 10;
+        final int TARGET_POSITION = 0;
+        Simulation simulation = new Simulation(INITIAL_POSITION, new Movement(TARGET_POSITION, new RandomGenerator()));
         simulation.simulate();
     }
 }
