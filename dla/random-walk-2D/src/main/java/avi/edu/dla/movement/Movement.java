@@ -9,10 +9,23 @@ public class Movement {
     Particle target;
     private RandomGenerator randomGenerator;
 
-    public Particle move(Particle current) {
-        System.out.println("before move, current position is: {x=" + current.getX() + ", y=" + current.getY() + "}");
+    public Trampoline<Particle> move(Particle current) {
+        if (target.equals(current)) {
+            return new Trampoline<Particle>() {
+                public Particle get() {
+                    return current;
+                }
+            };
+        }
+        else {
+            return new Trampoline<Particle>() {
+                public Trampoline<Particle> run() {
+                    System.out.println("before move, current position is: {x=" + current.getX() + ", y=" + current.getY() + "}");
 
-        int[] nextMove = randomGenerator.nextMove();
-        return target.equals(current) ? current : move(new Particle(current.getX() + nextMove[0], current.getY() + nextMove[1]));
+                    int[] nextMove = randomGenerator.nextMove();
+                    return move(new Particle(current.getX() + nextMove[0], current.getY() + nextMove[1]));
+                }
+            };
+        }
     }
 }

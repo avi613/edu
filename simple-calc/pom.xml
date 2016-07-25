@@ -12,10 +12,10 @@
     <artifactId>simple-calc</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>v1</module>
-        <module>v2</module>
-        <module>v3</module>
-        <module>v4</module>
+        <module>simple-calc-v1</module>
+        <module>simple-calc-v2</module>
+        <module>simple-calc-v3</module>
+        <module>simple-calc-v4</module>
     </modules>
 
 </project>

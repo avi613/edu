@@ -13,13 +13,14 @@ public class Simulation {
     private final Movement movement;
 
     public void simulate() {
-        movement.move(initial);
+        movement.move(initial).execute();
     }
 
     public static void main(String[] args) {
         final Particle INITIAL = new Particle(10, 10);
         final Particle TARGET = new Particle(0, 0);
         Simulation simulation = new Simulation(INITIAL, new Movement(TARGET, new RandomGenerator(new Random())));
+
         simulation.simulate();
     }
 }
