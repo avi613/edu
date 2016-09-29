@@ -9,13 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <modules>
-        <module>simple-calc</module>
-        <module>dla</module>
-        <module>fibonacci-sequence</module>
-        <module>factorial</module>
-    </modules>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
