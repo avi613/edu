@@ -1,0 +1,2 @@
+geth --datadir="./src/it/node/data" --maxpeers 0 init ./src/it/node/genesis.json
+geth --datadir="./src/it/node/data" --networkid 7536 --gasprice 2 --rpcapi admin,miner,personal,db,eth,net,web3 --rpc --rpcport 8545 console 2>> .\src\it\node\data\ethereum.log
