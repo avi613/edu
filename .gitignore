@@ -1,6 +1,6 @@
-	# intelliJ
-	.idea/
-	*.iml
+# intelliJ
+.idea/
+*.iml
 
-	# builds
-	target/
+# builds
+target/
