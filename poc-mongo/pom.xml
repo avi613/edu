@@ -34,6 +34,12 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+            <version>1.50.5</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -60,7 +66,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>com.github.joelittlejohn.embedmongo</groupId>
                 <artifactId>embedmongo-maven-plugin</artifactId>
                 <version>0.3.4</version>
@@ -71,7 +77,7 @@
                             <goal>start</goal>
                         </goals>
                         <configuration>
-                            <!--<port>${embedmongo.port}</port>-->
+                            &lt;!&ndash;<port>${embedmongo.port}</port>&ndash;&gt;
                             <version>3.4.1</version>
                             <databaseDirectory>${project.build.directory}/mongotest</databaseDirectory>
                             <bindIp>127.0.0.1</bindIp>
@@ -84,7 +90,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
