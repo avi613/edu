@@ -32,7 +32,7 @@ public class CustomerRepositoryIT {
         List<Customer> customers = ImmutableList.of(
                 new Customer("Bob", "Dylan"),
                 new Customer("Robert", "Dylan"));
-        customers.stream().forEach(
+        customers.forEach(
                 customer -> assertThat(repository.findAll())
                         .usingElementComparatorIgnoringFields("id")
                         .contains(customer));
